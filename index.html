@@ -46,17 +46,25 @@
 
 					<div class="row">
 						<div class="col-xs-6 text-left">
-							<input id="saleItemAmount" type="number" class="form-control" placeholder="$ Amount"></input>
+							<input id="costOfItem" type="number" class="form-control" placeholder="$ Amount"></input>
 						</div>
 
 						<div class="col-xs-6 text-left">
-							<input id="customerPayAmount" type="number" class="form-control" placeholder="$ Amount"></input><br/>
+							<input id="cashGiven" type="number" class="form-control" placeholder="$ Amount"></input><br/>
 						</div>
 					</div>
 
 					<div class="row">
-						<div class="col-xs-4">
-							<button type="button" id="clickon" class="btn btn-primary">Calculate</button>
+						<div class="col-xs-12">
+							<button type="button" onclick="changeCalc()" class="btn btn-primary btn-block">Calculate</button>
+						</div>
+					</div>
+
+
+
+					<div class="row">	
+						<div class="col-xs-12 text-center">
+							<br/><label id="results"></label>
 						</div>
 					</div>	
 			</div>
@@ -88,9 +96,9 @@
 							<img class="coins" src="http://cointrackers.com/img/coins/1983-p-washington-quarter.png"></label> 
 						<label class="col-xs-3">
 							<img class="coins" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Dime_Obverse_13.png"></label>
-						<label id="nickelsDueBack" class="col-xs-3">
+						<label class="col-xs-3">
 							<img class="coins" src="https://www.usmint.gov/images/mint_programs/circulatingCoins/Nickel-reverse.png"></label>
-						<label id="penniesDueBack" class="col-xs-3">
+						<label class="col-xs-3">
 							<img class="coins" src="https://upload.wikimedia.org/wikipedia/commons/2/2e/US_One_Cent_Obv.png"></label>
 					</div>	
 
@@ -109,8 +117,8 @@
 
 
 
-	<script src="/bower_components/jquery/dist/jquery.js"></script>
-	<script src="changeCalc.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="changeCalcJS.js"></script>
 </body>
 
 </html>
